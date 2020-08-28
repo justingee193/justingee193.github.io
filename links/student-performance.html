@@ -13150,7 +13150,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;data/student-mat.csv&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;;&quot;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;student-mat.csv&quot;</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s2">&quot;;&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13700,7 +13700,7 @@ memory usage: 101.9+ KB
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;seaborn.axisgrid.FacetGrid at 0x21907a70d68&gt;</pre>
+<pre>&lt;seaborn.axisgrid.FacetGrid at 0x23cb429a470&gt;</pre>
 </div>
 
 </div>
@@ -14055,7 +14055,7 @@ memory usage: 101.9+ KB
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;seaborn.axisgrid.FacetGrid at 0x21909742048&gt;</pre>
+<pre>&lt;seaborn.axisgrid.FacetGrid at 0x23cb4a134e0&gt;</pre>
 </div>
 
 </div>
@@ -14396,7 +14396,7 @@ memory usage: 101.9+ KB
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;seaborn.axisgrid.FacetGrid at 0x21909c42f60&gt;</pre>
+<pre>&lt;seaborn.axisgrid.FacetGrid at 0x23cb4b20ef0&gt;</pre>
 </div>
 
 </div>
@@ -14664,7 +14664,7 @@ memory usage: 101.9+ KB
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x21909d0ac50&gt;</pre>
+<pre>&lt;matplotlib.axes._subplots.AxesSubplot at 0x23cb51006a0&gt;</pre>
 </div>
 
 </div>
@@ -14839,7 +14839,7 @@ $$
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">seed</span> <span class="o">=</span> <span class="n">rand</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">444</span><span class="p">)</span>
 
 <span class="n">X</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;paid&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;yes&#39;</span><span class="p">][</span><span class="s1">&#39;G3&#39;</span><span class="p">]</span>
-<span class="n">Y</span> <span class="o">=</span> <span class="n">rand</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;paid&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;yes&#39;</span><span class="p">][</span><span class="s1">&#39;G3&#39;</span><span class="p">]),</span> <span class="mi">181</span><span class="p">)</span>
+<span class="n">Y</span> <span class="o">=</span> <span class="n">rand</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;paid&#39;</span><span class="p">]</span><span class="o">==</span><span class="s1">&#39;no&#39;</span><span class="p">][</span><span class="s1">&#39;G3&#39;</span><span class="p">]),</span> <span class="mi">181</span><span class="p">)</span>
 
 <span class="n">t_stat</span><span class="p">,</span> <span class="n">p</span> <span class="o">=</span> <span class="n">wilcoxon</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="n">Y</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;The test statistic is </span><span class="si">{}</span><span class="s2">, with a p-value of </span><span class="si">{}</span><span class="s2">.&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="nb">round</span><span class="p">(</span><span class="n">t_stat</span><span class="p">,</span> <span class="mi">3</span><span class="p">),</span> <span class="nb">round</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="mi">3</span><span class="p">)))</span>
@@ -14859,7 +14859,7 @@ $$
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>The test statistic is 5830.0, with a p-value of 0.912.
+<pre>The test statistic is 5225.5, with a p-value of 0.003.
 </pre>
 </div>
 </div>
@@ -14871,7 +14871,7 @@ $$
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>From the Wilcoxon signed rank-test, there is no statistical difference between the two sample pairs where additional classes did not affect student performance.</p>
+<p>From the Wilcoxon signed rank-test, there is a statistical difference between the two sample pairs where additional classes does affect student performance.</p>
 
 </div>
 </div>
